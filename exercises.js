@@ -1,3 +1,6 @@
+
+console.log('asdfasdf')
+
 /*
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
@@ -11,11 +14,11 @@ if(today === "Friday"){
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
 */
 
-if(today === "Friday"){
+/*if(today === "Friday"){
   return "Let's Party!";
 }else{
   return "Get back to coding!";
-};
+};*/
 
 
 /*
@@ -29,6 +32,15 @@ if(today === "Friday"){
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+function canVote(age){
+  if(age>=18){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(canVote(17))
 
 /*
  * #2
@@ -42,6 +54,12 @@ if(today === "Friday"){
  * Console.log your result.
 */
 
+function login(password){
+  if(password === "test1234"){
+    return "Login Success!"
+  }
+}
+console.log(login("test1234"))
 
 /*
  * #3
@@ -56,6 +74,15 @@ if(today === "Friday"){
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+  if(first>second){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(isGreaterThan(12,1))
+
 
 /*
  * #4
@@ -69,6 +96,12 @@ if(today === "Friday"){
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if(boo===true){
+    return true;
+  }
+}
+console.log(mustBeTrue(5>3))
 
 /*
  * #5
