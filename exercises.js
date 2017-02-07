@@ -115,6 +115,12 @@ console.log(mustBeTrue(5>3))
  * Console.log your result.
 */
 
+function bigBird(word){
+  if(word.length===3){
+    return "Word to Big Bird!"
+  }
+}
+console.log(bigBird('sadsff'))
 
 /*
  * #6
@@ -128,6 +134,15 @@ console.log(mustBeTrue(5>3))
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
+
+function isEqual(first, second){
+  if(first === second){
+    return "You look mahvelous!"
+  }else{
+    return "I don't know who you are anymore"
+  }
+}
+console.log(isEqual('asdf','asd'))
 
 
 /*
@@ -143,7 +158,15 @@ console.log(mustBeTrue(5>3))
  * Console.log your result.
 */
 
+function notEqual(first,second){
+  if(first!==second){
+    return "Opposites do attract"
+  }else{
+    return "Cause it's like you're my mirror"
+  }
+}
 
+console.log(notEqual(1,1))
 /*
  * #8
  * Function - spareChange
@@ -156,6 +179,14 @@ console.log(mustBeTrue(5>3))
  * Console.log your result.
 */ 
 
+function spareChange(money){
+  if(money>100){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(spareChange(99))
 
 /*
  * #9
@@ -170,6 +201,14 @@ console.log(mustBeTrue(5>3))
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
+function dirty30(one,two,three){
+  if(one+two+three>30){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(dirty30(2,6,30))
 
 
 /*
@@ -183,8 +222,14 @@ console.log(mustBeTrue(5>3))
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function evenStevens(num){
+  if(num%2===0){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(evenStevens(11))
 /*
  * #11
  * Function - daClub
@@ -197,7 +242,14 @@ console.log(mustBeTrue(5>3))
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
-
+function daClub(cover, age){
+  if(cover>=21&&age>=21){
+    return "Welcome to the Legands Lounge"
+  }else{
+    return "Chuck E Cheese is across the street"
+  }
+}
+console.log(daClub(21,22))
 
 /*
  * #12
@@ -212,6 +264,14 @@ console.log(mustBeTrue(5>3))
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if(credits>10||thesis===false){
+    return "Congratulations"
+  }else{
+    return "see you at summer school"
+  }
+}
+console.log(graduation(121, false))
 
 /*
  * #13
@@ -224,7 +284,13 @@ console.log(mustBeTrue(5>3))
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
+function moneyTrain(speed){
+  if(speed<50){
+    return "you are riding the rail"
+  }else{
+    
+  }
+}
 
 /*
  * #14
@@ -251,12 +317,13 @@ The for loop is made up for 3 parts:
 3) Update (i.e. i++)
 */
 
+/*
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
 for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
-
+*/
 
 /* 
  * #15
