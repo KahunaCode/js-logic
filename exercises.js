@@ -413,14 +413,13 @@ console.log(total)
   var west = [];
 
   function allStars(ballers){
-    for(i=0; i<ballers.length; i++)
+    for(i=0; i<ballers.length; i++){
       if(i%2===0){
         east.push(ballers[i])
       }else{
         west.push(ballers[i])
       }
-      return east
-      return west
+    }
   }
 
 allStars(players);
