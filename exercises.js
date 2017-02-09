@@ -382,9 +382,17 @@ for(var i =0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
-var numArray = [1.3.5.6.7];
+var numArray = [1,3,5,6,7];
 var total = 0;
 
+function sumItUp(arr){
+  for(i=0;i<arr.length;i++){
+    total = total + arr[i];
+  }
+  return total
+}
+sumItUp(numArray)
+console.log(total)
 
 /*
  * #18
@@ -402,6 +410,21 @@ var total = 0;
   var east = [];
   var west = [];
 
+  function allStars(ballers){
+    for(i=0; i<ballers.length; i++)
+      if(i%2===0){
+        east.push(ballers[i])
+      }else{
+        west.push(ballers[i])
+      }
+      return east
+      return west
+  }
+
+allStars(players);
+console.log(`east is ${east}`)
+console.log(`west is ${west}`)
+
 /*
  * #19
  * Function - subways
@@ -416,6 +439,17 @@ var total = 0;
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special){
+  for(i=0;i<special.length; i++){
+    if(i%2!=0){
+      special.splice(i, 1, "Classic Tuna")
+    }
+  }
+  return special
+}
+subways(subOftheDay);
+console.log(subOftheDay)
+
 
 /*
 Final Boss
@@ -429,8 +463,17 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  var phrase = "An apple a day keeps Alice feeling awesome!"
-  
+var phrase = "An apple a day keeps Alice feeling awesome!"
+function removeLetter(str){
+  var newArray = []
+  for(i=0; i<str.length; i++){
+    if(str[i] != 'a' && str[i] != 'A'){
+      newArray.push(str[i])
+      }
+    }
+  return newArray
+  }
+console.log(removeLetter(phrase));
 
 
 
