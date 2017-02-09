@@ -306,6 +306,23 @@ function moneyTrain(speed){
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 25;
+var doughnutPrice = 3;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+  budget = budget - doughnutPrice;
+  doughnutBought+=1;
+  return budget, doughnutBought
+
+}
+buyDoughnut();
+console.log(budget)
+console.log(doughnutBought)
+
+buyDoughnut();
+console.log(budget)
+console.log(doughnutBought)
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -325,6 +342,8 @@ for (var i = 0; i<toyotaModels.length; i++){
 }
 */
 
+
+
 /* 
  * #15
  * Create a for loop that will iterate 5 times and console.log the following:
@@ -334,13 +353,19 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
-
+for(var i=1; i<=5; i++){
+  console.log(`Player: ${i}`)
+}
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+
+for(var i =0; i<myFavFoods.length; i++){
+  console.log(myFavFoods[i])
+}
 
 
 /*
@@ -357,6 +382,8 @@ for (var i = 0; i<toyotaModels.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray = [1.3.5.6.7];
+var total = 0;
 
 
 /*
