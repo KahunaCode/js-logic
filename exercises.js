@@ -265,7 +265,7 @@ console.log(daClub(21,22))
 */ 
 
 function graduation(credits, thesis){
-  if(credits>10||thesis===false){
+  if(credits>=120||thesis===false){
     return "Congratulations"
   }else{
     return "see you at summer school"
@@ -313,9 +313,10 @@ var doughnutBought = 0;
 function buyDoughnut(){
   budget = budget - doughnutPrice;
   doughnutBought+=1;
-  return budget, doughnutBought
-
 }
+
+//holy shit you dont have to pass the variables into the function for any function to change the variable
+
 buyDoughnut();
 console.log(budget)
 console.log(doughnutBought)
@@ -323,6 +324,8 @@ console.log(doughnutBought)
 buyDoughnut();
 console.log(budget)
 console.log(doughnutBought)
+
+
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -389,7 +392,6 @@ function sumItUp(arr){
   for(i=0;i<arr.length;i++){
     total = total + arr[i];
   }
-  return total
 }
 sumItUp(numArray)
 console.log(total)
